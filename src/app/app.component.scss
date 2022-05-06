@@ -1,0 +1,29 @@
+.wrapper{
+  display:grid;
+  grid-template-rows: 1fr 13fr 1fr;
+  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-areas:
+  "header header header"
+  "aside main main"
+  "aside main main"
+}
+
+.header{
+  grid-area:header;
+  background-color: rgba(46, 3, 46, 0.466);
+}
+
+.sidemenu{
+  grid-area:aside;
+  background: rgba( 141, 17, 248, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.content{
+  grid-area:main;
+  background-color:rgba(244, 220, 154, 0.527);
+}
